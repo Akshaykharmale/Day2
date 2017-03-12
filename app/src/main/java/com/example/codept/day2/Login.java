@@ -10,7 +10,7 @@ import android.widget.Toast;
 import static android.view.View.*;
 
 public class Login extends AppCompatActivity {
-private static EditText uname,pass;
+private static EditText uname,password;
 
     private static Button btn;
 
@@ -24,7 +24,7 @@ private static EditText uname,pass;
     public void login()
     {
         uname = (EditText) findViewById(R.id.editText);
-        pass = (EditText)findViewById(R.id.editText2);
+        password = (EditText)findViewById(R.id.editText2);
 
 
         btn = (Button)findViewById(R.id.button3);
@@ -33,7 +33,7 @@ private static EditText uname,pass;
 
             @Override
             public void onClick(View view) {
-              if (uname.getText().toString().equals("admin") && pass.getText().toString().equals("admin")) {
+              if (uname.getText().toString().equals("admin") && password.getText().toString().equals("admin")) {
                   Toast.makeText(Login.this,"Login as Admin", Toast.LENGTH_SHORT).show();
               }
 
