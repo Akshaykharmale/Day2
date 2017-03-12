@@ -12,7 +12,7 @@ import static android.view.View.*;
 public class Login extends AppCompatActivity {
 private static EditText uname,password;
 
-    private static Button btn;
+    private static Button bt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,8 +27,8 @@ private static EditText uname,password;
         password = (EditText)findViewById(R.id.editText2);
 
 
-        btn = (Button)findViewById(R.id.button3);
-        btn.setOnClickListener(new OnClickListener()
+        bt= (Button)findViewById(R.id.button3);
+        bt.setOnClickListener(new OnClickListener()
         {
 
             @Override
